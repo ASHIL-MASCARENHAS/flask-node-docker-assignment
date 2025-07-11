@@ -18,10 +18,9 @@ app.get('/', (req, res) => {
 
 app.post('/submit', async (req, res) => {
     const { name, email } = req.body;
-    console.log('Received form submission on frontend:', { name, email, message });
+    console.log('Received form submission on frontend:', { name, email });
 
-    const BACKEND_HOST = process.env.BACKEND_HOST || 'backend';
-    const backendUrl = `http://${BACKEND_HOST}:5000/process`;
+    const backendUrl = `http://backend:5000/process`;
     console.log(`Attempting to send data to backend at: ${backendUrl}`);
 
     try {
