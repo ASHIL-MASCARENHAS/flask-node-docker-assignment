@@ -1,0 +1,17 @@
+node_modules/
+npm-debug.log
+.env
+
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+.vscode/
+.DS_Store
+*.swp
+*~
+.idea/
+
+*.log
+*.sqlite3
